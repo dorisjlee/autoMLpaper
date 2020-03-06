@@ -1,0 +1,49 @@
+\section{Related Work}
+Our work builds on top of three major areas of prior work: auto-ml systems, human-centric view of auto-ml and user studies of data science practitioners. 
+
+\subsection{Auto-ml Systems}
+In the past several years, an increasing number of tools have sprung up to support and automate the machine learning process. These tools have traditionally focused on automating the modelling phase of in machine learning, but there has been a growing trend for supporting the end-to-end machine learning cycle, from data pre-processing to model building to post-processing. The intention of the tools is to relieve practitioners of the repetitive and time-consuming tasks in the machine learning process while providing solutions at speed and spare human resource time for other critical tasks that are not easily automated.
+% Data pre-processing includes ETL, data cleaning, and exploratory data analysis. Model building involves model selection, hyperparameter tuning, and model ensembling. Post-processing include performance evaluation and insight and report generation. 
+
+
+% (however, many practitioners enjoy the practices. refer to 203.)
+
+These tools largely fall into three categories based on their accessibility: open source packages such as \cite{Feurer:autosklearn,TPOT:Olson, auto-keras}, commercial services such as Amazon Sagemaker, Google AutoML, H2O Driveless AI, DataRobot and enterprise internal tools such as FBLearner. These tools can be categorized based on their comprehensiveness: some offer end-to-end solution with various levels of support for all stages of the machine learning workflow, while others offer partial solution that only address one or two phases of the machine learning workflow. They also vary in their underlying optimization techniques, transparency and customizability. The lack of control and opacity in many of these auto-ml tools have spurred interest in research around human-oriented auto-ml.
+
+\subsection{HCI of Auto-ml systems}
+Some prior work has investigated the human-centric perspective of automated machine learning, advocating for a collaborative approach between human and automated machine learning \cite{Lee2019AHP,wang2018atmseer, gilHGML}, in which auto-ml augments human practitioners in speed and accuracy and human practitioners guide auto-ml using their domain knowledge. Taking a human-centric approach, these prior work explored data scientists' perceptions of  auto-ml, including concepts such as transparency, trust and interpretability and proposed design recommendations to increase human trust in auto-ml and the usability of tools through visual analytics \cite{wang2018atmseer, cashman et al snowcast}.   
+
+Gil et al. proposed human-guided machine learning (HGML) as a hybrid approach to incorporate human knowledge to augment and improve the performance of auto-ml and argued that complete automation is not ideal for all use cases (Gil et al., 2019). In their study, Gil et al. analyzed machine learning workflows described in two academic publications from two different disciplines to complement their understanding of machine learning user behaviors and to inform their design recommendations for HGML systems.
+
+% Snowcat \cite{Cashman et al., 2018} provides visualization of machine learning models used in auto-ml with the aim to shed light on the black boxes of auto-ml. Cashman et al. built the Snowcat system based on theoretical framework and architecture without using any qualitative methods. 
+
+Wang et al. designed ATMSeer \cite{wang2018atmseer}, a visual analytics tool that enables search space refinement, computational budget adjustment, and model selection reasoning.  They designed ATMSeer based on feedback from semi-structured interviews with six machine learning practitioners in which they sought to understand the opportunities exist to improve the process of how machine learning practitioners choose machine learning models.  
+
+Wang et al. echo previous research, arguing that complete automation might not be desirable in all use cases and highlighting the multifarious objectives of data scientists' work \cite{DakuoCSCW2019}. Their study also revealed the different relationships between human and auto-ml, such as auto-ml as a collaborator, teacher and a data scientist. They concluded their paper by outlining design recommendations that allow auto-ml to augment human data scientists through collaboration, for example, integrating xAI techniques in auto-ml user interfaces to provide answers in some of the "why" questions to increase trust and giving data scientists the full control over the final choices of the entire pipeline and design these features for model interpretation for users from diverse backgrounds. 
+
+Drozdal et al. studied trust in auto-ml and found that increasing transparency increases trust, however it depends on the users' purposes and context. \cite{DrozdalTrustAutoml}
+
+\subsection{Empirical Studies of Data Practitioners}
+Recent research has also studied data science and machine learning practitioners' workflow without automated machine learning. \cite{}. Amershi et al. surveyed software engineers about their work practices building and integrating machine learning into software and services. They conducted interviews to gather insights that informed their research questions and developed a wide-scale survey about the identified topics. They identified a challenge in machine learning is that iterating on models is time and labor extensive. Another set of related work studied non-experts of machine learning. For example, Yang et al. used interviews and survey and investigated how non-experts build machine learning solutions in real life. \cite{YangNonExpert} Kandel et al. studied analysts in the industry to understand their work process, struggles and potential solutions. \cite{Kandel}
+
+To our knowledge, no research has drawn all their study subjects from users of automated machine learning who have experience using auto-ml in real-world applications and with an established relationship with auto-ml tools. Many existing studies focus only on the modelling phase in the machine learning process. Our study contributes to existing work by studying users who have used auto-ml for real-world applications and we sought to understand their work practices across all stages of the machine learning process and the humans involvement in their current workflow. 
+Our study answers the following questions:[TODO: add more details depending on the findings]
+\textbf{RQ1}: Who are the users of Automated Machine Learning tools?
+\textbf{RQ2}: What are their current work practices and what strategies do they employ to integrate automated machine learning into their existing workflow?
+\textbf{RQ3}: What are their perceptions of auto-ml and what are the affect of auto-ml on auto-ml users?
+
+
+% \subsection{Our Contribution to Prior Work}
+% Prior work has leveraged controlled experiments or have studied machine learning practitioners. 
+
+
+% We reveal the multifarious motivations of the practicing machine learning: enjoyment (similar to readings in 203 about professional values of nurses who want to provide care.) or not to simply gain the best accuracy score [is there anything besides what's covered in Dakuo's uncover relationship in the data?] [This begs the question, what do data scientists use machine learning for?]
+
+
+
+
+
+
+
+
+
