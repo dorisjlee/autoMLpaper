@@ -2,7 +2,10 @@
 % The first command in your LaTeX source must be the \documentclass command.
 \documentclass[acmsmall]{acmart}
 
-%
+
+% Load basic packages
+\usepackage{graphics}      % for EPS, load graphicx instead 
+\usepackage{xspace}
 % defining the \BibTeX command - from Oren Patashnik's original BibTeX documentation.
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08emT\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
     
@@ -33,6 +36,19 @@
 % Use this when submitting an article to a sponsored event. You'll receive a unique submission ID from the organizers
 % of the event, and this ID should be used as the parameter to this command.
 %\acmSubmissionID{123-A56-BU3}
+\newcommand{\stitle}[1]{\noindent\textbf{#1}}
+\newcommand{\npar}{\par\noindent}
+\newcommand{\papertext}[1]{#1}
+\newcommand{\cut}[1]{\textcolor{gray}{\sout{#1}}}
+\newcommand{\change}[1]{{\leavevmode\color{magenta}#1}}%Revision change
+\newcommand{\automl}{AutoML\xspace}
+\newcommand{\todo}[1]{\textcolor{red}{TODO: #1}}
+\newcommand{\ewu}[1]{\textcolor{red}{(eva: #1)}}
+\newcommand{\dlee}[1]{\textcolor{blue}{(dlee: #1)}}
+\newcommand{\dorx}[1]{\textcolor{orange}{(dorx: #1)}}
+\newcommand{\aditya}[1]{\textcolor{green}{(aditya: #1)}}
+\newcommand{\nfar}[1]{\textcolor{lime}{niloufar: #1}}
+\newcommand{\changes}[1]{\textcolor{magenta}{#1}}
 
 %
 % The majority of ACM publications use numbered citations and references. If you are preparing content for an event
